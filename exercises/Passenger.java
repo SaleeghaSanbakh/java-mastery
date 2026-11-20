@@ -33,6 +33,10 @@ public class Passenger {
         return passportNumber.strip().toUpperCase();
     }
 
+    public String boardingGroup() {
+        return "General";
+    }
+
     @Override
     public String toString() {
         return "Passenger{name='" + name + "', passport='" + passportNumber + "'}";

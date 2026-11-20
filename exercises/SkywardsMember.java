@@ -29,6 +29,11 @@ public class SkywardsMember extends Passenger {
         return membershipNumber.strip().toUpperCase();
     }
 
+    @Override
+    public String boardingGroup() {
+        return "Priority";
+    }
+
     public static void main(String[] args) {
         SkywardsMember member1 = new SkywardsMember("Seetha", "u123456", "abc12345");
         member1.addMiles(50);
